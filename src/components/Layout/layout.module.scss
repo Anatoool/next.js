@@ -1,0 +1,40 @@
+@import "styles/variables";
+
+$headerHeight: 52px;
+
+.header {
+  width: 100%;
+  height: $headerHeight;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  box-shadow: 0 4px 4px rgba(69,79,99,0.16);
+}
+
+.content {
+  padding-top: $headerHeight;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.logo {
+  margin: 0 24px 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none !important;
+
+  &__title {
+    margin-left: 9px;
+    font-size: 0.8125rem;
+    color: $light-grey;
+    font-weight: bold;
+  }
+}
